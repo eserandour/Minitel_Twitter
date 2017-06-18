@@ -19,7 +19,7 @@ fi
 
 # Minitel
 # On lance le programme couleurs.py en tant qu'utilisateur pi
-su -l pi -c "python /home/pi/3615/couleurs.py &"  # Le & est là pour que le programme t$
+su -l pi -c "python /home/pi/3615/minitel.py &"  # Le & est là pour que le programme t$
 
 # Horloge RTC DS3231
 sudo echo ds3231 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
