@@ -18,7 +18,7 @@ if [ "$_IP" ]; then
 fi
 
 # Minitel
-# On lance le programme couleurs.py en tant qu'utilisateur pi
+# On lance le programme minitel.py en tant qu'utilisateur pi
 su -l pi -c "python /home/pi/3615/minitel.py &"  # Le & est là pour que le programme t$
 
 # Horloge RTC DS3231
