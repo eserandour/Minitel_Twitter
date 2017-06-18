@@ -44,6 +44,7 @@ try:
         if data != '':
             try:
                 if data == '#POWEROFF': os.system('sudo poweroff')
+                if data == '#REBOOT': os.system('sudo reboot')
                 ajoutDansFichier(data)
                 twitter.update_status(status=data)
             except TwythonError as e:
