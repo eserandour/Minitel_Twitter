@@ -11,8 +11,8 @@ CONSUMER_SECRET = 'xxx'  # A ADAPTER
 ACCESS_KEY = 'xxx'  # A ADAPTER
 ACCESS_SECRET = 'xxx'  # A ADAPTER
 # Pour utiliser Twython, il faut installer (sudo apt-get install) :
-# sous Python 2.7 : python-twython / python-oauth / python-oauth2client / python-oauthlib / python-requests-o$
-# sous Python 3 : python3-twython / python3-oauth / python3-oauth2client / python3-oauthlib / python3-request$
+# sous Python 2.7 : python-twython / python-oauth / python-oauth2client / python-oauthlib / python-requests-oauthlib
+# sous Python 3 : python3-twython / python3-oauth / python3-oauth2client / python3-oauthlib / python3-requests-oauthlib
 from twython import Twython ,TwythonError
 twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 
