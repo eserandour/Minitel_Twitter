@@ -16,7 +16,7 @@ ACCESS_SECRET = 'xxx'  # A ADAPTER
 from twython import Twython ,TwythonError
 twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 
-nomFichier = '/home/pi/3615/couleurs.txt'
+nomFichier = '/home/pi/3615/minitel.txt'
 
 ########################################################################
 
