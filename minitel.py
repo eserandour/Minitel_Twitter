@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import serial
 myserial = serial.Serial('/dev/ttyAMA0', 9600, timeout=1)
 
@@ -42,6 +43,7 @@ try:
         data = data.decode('latin_1')
         if data != '':
             try:
+                if data == '#POWEROFF': os.system('sudo poweroff')
                 ajoutDansFichier(data)
                 twitter.update_status(status=data)
             except TwythonError as e:
