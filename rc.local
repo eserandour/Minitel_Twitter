@@ -1,6 +1,6 @@
 #!/bin/sh -e
 #
-# /etc/rc.local
+# rc.local
 #
 # This script is executed at the end of each multiuser runlevel.
 # Make sure that the script will "exit 0" on success or any other
@@ -18,7 +18,11 @@ if [ "$_IP" ]; then
 fi
 
 # Minitel
-# On lance le programme minitel.py en tant qu'utilisateur pi
-su -l pi -c "python /home/pi/3615/minitel.py &"  # Le & est là pour que le programme tourne en tâche de fond
+# On lance le programme couleurs.py en tant qu'utilisateur pi
+su -l pi -c "python /home/pi/3615/couleurs.py &"  # Le & est là pour que le programme t$
+
+# Horloge RTC DS3231
+sudo echo ds3231 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+hwclock -s
 
 exit 0
